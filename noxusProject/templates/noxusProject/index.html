@@ -1,0 +1,27 @@
+<!------------------------------------ base site ---------------------------------------->
+{% extends 'base_site.html' %}
+{% block content %}
+<!------------------------------------------------------------------------------------->
+
+
+<div id="mySidenav">
+  <a href="top" id="top"><div class="top-icon"></div></a>
+  <a href="jungle" id="jungle"><div class="jungle-icon"></div></a>
+  <a href="mid" id="mid"><div class="mid-icon"></div></a>
+  <a href="adc" id="adc"><div class="adc-icon"></div></a>
+  <a href="support" id="support"><div class="support-icon"></div></a>
+</div>
+
+<div class="container">
+  <!-- make the for loop of django -->
+  {%for champ in champion %}
+  <div class="box">
+    <a href="champion/{{champ.name}}"><div class="picture" style="background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/loading/{{champ.name}}_0.jpg)"></div></a>
+    <a href="champion/{{champ.name}}"><div class="text">{{champ.name}}</div></a>
+  </div>
+  {% endfor %}
+</div>
+
+<!------------------------------------ base site ---------------------------------------->
+{% endblock %}  
+<!------------------------------------------------------------------------------------->

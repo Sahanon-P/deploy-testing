@@ -1,0 +1,288 @@
+/*--------------- Body, Footer ---------------*/
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-size: 400;
+}
+
+/*--------------- Menu Bar ---------------*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: backgroud 0.3s ease-in-out;
+  }
+
+.dropdown-menu a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.Menubtn {
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+}
+
+.dropdown-menu a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+.dropdown:hover .Menubtn {color: whitesmoke;}
+  
+/*--------------- League of Legend Box ---------------*/
+
+#block1 {
+    border-radius: 25px;
+    background:#333;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+    height: 100px;
+  
+    text-align: center;
+    color:#a6a6a6;
+    font-size:70px; 
+}
+
+/*--------------- Search Bar ---------------*/
+
+.searchBox {
+    position: absolute;
+    top: -5%;
+    right: 2%;
+    transform:  translate(0%,100%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+
+/*--------------- Champion Menu Bar ---------------*/
+
+#mySidenav a {
+    position: fixed;
+    /* top:50%; */
+    left: -30px;
+    transition: 0.3s;
+    height: 60px;
+    width: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    background: whitesmoke;
+    border-radius: 0 50% 50% 0;
+  }
+
+#mySidenav a:hover {
+    left: 0px;
+}
+
+#top {
+    top:25%;
+}
+
+.top-icon {
+    margin-top: 7px;
+    margin-left: 7px;
+    height: 45px;
+    width: 45px;
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-top.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.top-icon:hover {
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-top-hover.png');
+}
+
+#jungle {
+    top:35%;
+}
+
+.jungle-icon {
+    margin-top: 7px;
+    margin-left: 7px;
+    height: 45px;
+    width: 45px;
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-jungle.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.jungle-icon:hover {
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-jungle-hover.png');
+}
+
+#mid {
+    top: 45%;
+}
+
+.mid-icon {
+    margin-top: 7px;
+    margin-left: 7px;
+    height: 45px;
+    width: 45px;
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-middle.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.mid-icon:hover {
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-middle-hover.png');
+}
+
+#adc {
+    top:55%;
+}
+
+.adc-icon {
+    margin-top: 7px;
+    margin-left: 7px;
+    height: 45px;
+    width: 45px;
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-bottom.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.adc-icon:hover {
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-bottom-hover.png');
+}
+
+#support {
+    top: 65%;
+}
+
+.support-icon {
+    margin-top: 7px;
+    margin-left: 7px;
+    height: 45px;
+    width: 45px;
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-utility.png');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.support-icon:hover {
+    background-image: url('https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/icon-position-utility-hover.png');
+}
+
+
+/*--------------- Square Box Table ---------------*/
+
+.container {
+    position: absolute;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 12%;
+    /* margin-bottom: 200px; */
+}
+
+.box {
+    height: 300px;
+    width: 165px;
+    display: inline-block;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.picture {
+    height: 255px;
+    width: 140px;
+    margin-left: 14%;
+    background-size: cover;
+}
+
+.picture:hover {
+    /*add later*/
+}
+
+.text{
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+    color: white;
+}
+
+.text:hover {
+    /*add later*/
+}
+
+/*--------------- footer ---------------*/
+
+#footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background: #222;
+    transition: 0.3s;
+}
