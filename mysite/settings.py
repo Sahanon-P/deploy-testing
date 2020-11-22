@@ -12,10 +12,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -26,7 +26,7 @@ SECRET_KEY = '&qx220rcfja!9dcr)@g%$erw20rj7xte8xqeymqou2^5@bdac^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pazcal-b.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -118,16 +118,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 AUTHENTICATION_BACKENDS = (
     "django.contrib.auth.backends.ModelBackend",
 )
 
 LOGIN_REDIRECT_URL = "/index/"
-django_heroku.settings(locals())
