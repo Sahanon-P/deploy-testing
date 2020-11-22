@@ -25,7 +25,7 @@ SECRET_KEY = '&qx220rcfja!9dcr)@g%$erw20rj7xte8xqeymqou2^5@bdac^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://pazcal-b.herokuapp.com']
 
 
 # Application definition
